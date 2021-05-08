@@ -1,0 +1,32 @@
+.navbarWrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+.navbarContainer, li {
+    list-style-type: none;
+    padding-bottom: 10px;
+    background-color: var(--navbackgroundcolor);
+}
+
+
+.linkHome {
+    text-decoration: none;
+    color: var(--textcolor);
+}
+
+.linkCreate {
+    text-decoration: none;
+    color: var(--textcolor);
+}
+
+.linkRegister {
+    text-decoration: none;
+    color: var(--textcolor);
+}
+
+.linkLogin {
+    text-decoration: none;
+    color: var(--textcolor);
+}
