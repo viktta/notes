@@ -30,3 +30,8 @@
     text-decoration: none;
     color: var(--textcolor);
 }
+
+.linkLogout {
+    text-decoration: none;
+    color: var(--textcolor);
+}

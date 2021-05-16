@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import axios from "axios";
 import { withRouter } from "react-router-dom";
+import '../../styles/register.css';
+
 
 function Register(props) {
   const [username, setUsername] = useState("");
@@ -26,8 +28,8 @@ function Register(props) {
       });
   };
   return (
-    <div>
-      <div>
+    <div className='registerWrapper'>
+      <div className='registerContainer'>
         <form onSubmit={RegisterUser}>
           <input
             name="username"
@@ -44,7 +46,7 @@ function Register(props) {
             placeholder="enter password"
             type="password"
           ></input>
-          <button type="submit">Register</button>
+          <button type="submit" className='registerSubmit'>Register</button>
         </form>
       </div>
     </div>

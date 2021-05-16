@@ -1,0 +1,35 @@
+.registerWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.registerContainer {
+    display: block;
+    grid-row: 2;
+    grid-column: 3;
+    text-align: center;
+}
+
+.registerFormUsername {
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+
+.registerFormPassword {
+    position: relative;
+    top: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.registerSubmit {
+    position: relative;
+    left: 60px;
+    top: 20px;
+    background-color: var(--navbackgroundcolor);
+    color: var(--textcolor);
+    border-radius: 10px;
+    border: 1px solid gray;
+}

@@ -3,6 +3,8 @@ import { useState } from "react";
 import Cookies from "js-cookie";
 import { withRouter } from "react-router-dom";
 import axios from "axios";
+import '../../styles/login.css';
+
 
 function Login(props) {
   const [username, setUsername] = useState("");
@@ -30,8 +32,8 @@ function Login(props) {
   };
 
   return (
-    <div>
-      <div>
+    <div className='loginWrapper'>
+      <div className='loginContainer'>
         <form onSubmit={LoginUser}>
           <input
             name="username"
@@ -48,7 +50,7 @@ function Login(props) {
             placeholder="enter password"
             type="password"
           ></input>
-          <button type="submit">Login</button>
+          <button type="submit" className='loginSubmit'>Login</button>
         </form>
       </div>
     </div>

@@ -1,14 +1,23 @@
-import React from 'react';
-import Navbar from './components/nav/index';
-import './styles/index.css';
+import React from "react";
+import Navbar from "./components/nav/index";
+import "./styles/index.css";
+import UserNotes from "./components/links/index";
 
-function App () {
+function App() {
+  const p = window.location.pathname === "/";
+
   return (
     <div>
-      <Navbar />
+      {p ? (
+        <div>
+          <Navbar />
+          <UserNotes />
+        </div>
+      ) : (
+        <Navbar />
+      )}
     </div>
-  )
+  );
 }
-
 
 export default App;
