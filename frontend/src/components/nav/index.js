@@ -19,6 +19,12 @@ function Navbar(props) {
     }, 1000);
   };
 
+  const reload = (e) => {
+    window.setTimeout(() => {
+      window.history.go(0);
+    }, 1);
+  };
+
   return (
     <BrowserRouter>
       {IsLoggedIn ? (
@@ -26,12 +32,12 @@ function Navbar(props) {
           <div className="navbarContainer">
             <ul>
               <li>
-                <Link to="/" className="linkHome">
+                <Link to="/" className="linkHome" onClick={reload}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/create" className="linkCreate">
+                <Link to="/create" className="linkCreate" onClick={reload}>
                   Create
                 </Link>
               </li>
@@ -48,22 +54,22 @@ function Navbar(props) {
           <div className="navbarContainer">
             <ul>
               <li>
-                <Link to="/" className="linkHome">
+                <Link to="/" className="linkHome" onClick={reload}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/create" className="linkCreate">
+                <Link to="/create" className="linkCreate" onClick={reload}>
                   Create
                 </Link>
               </li>
               <li>
-                <Link to="/register" className="linkRegister">
+                <Link to="/register" className="linkRegister" onClick={reload}>
                   Register
                 </Link>
               </li>
               <li>
-                <Link to="/login" className="linkLogin">
+                <Link to="/login" className="linkLogin" onClick={reload}>
                   Login
                 </Link>
               </li>

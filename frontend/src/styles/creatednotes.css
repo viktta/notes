@@ -1,0 +1,31 @@
+.OpenPopUp {
+    display: none;
+    position: relative;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: auto;
+}
+
+
+#OpenButton {
+    float: right;
+}
+
+.userCreatedNotesWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+
+.userCreatedEdit {
+    background-color: var(--navbackgroundcolor);
+    color: var(--textcolor);
+}
+
+.creatednotesForm, li {
+    background-color: var(--creatednotesbc);
+}
+
+
